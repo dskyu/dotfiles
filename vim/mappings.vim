@@ -7,13 +7,18 @@ map zpb :CtrlPBuffer<Enter>
 map zpm :CtrlPMRU<Enter>
 map zpx :CtrlPMixed<Enter>
 
+let g:indent_guides_enable_on_vim_startup = 1
+
+"NERDTreeToggle<Enter>
+map <F4> :NERDTreeToggle<Enter>
+
 "Tagbar mappings
-map zgs :Tagbar<Enter>
+map <F5> :Tagbar<Enter>
 
 "Tabbar mappings"
-map zn :Tbbn<Enter>
-map zm :Tbbp<Enter>
-map zd :Tbbd<Enter>
+map <C-n> :Tbbn<Enter>
+map <C-b> :Tbbp<Enter>
+map <C-d> :Tbbd<Enter>
 map zts :TbStart<Enter>
 map ztc :TbStop<Enter>
 

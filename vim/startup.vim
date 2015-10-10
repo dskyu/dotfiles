@@ -4,7 +4,6 @@ function! Startup()
         NERDTree
     end
 
-    Tagbar
 endfunction
 
 "Run startup function

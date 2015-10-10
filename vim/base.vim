@@ -13,9 +13,12 @@ source ~/.dotfiles/vim/plugin/vundle.vim
 
 "Always show the status line
 set laststatus=2
+"set t_Co=256
 
 "Format the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+"set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+set guifont=Monaco\ for\ Powerline:h14
+set encoding=utf-8
 
 """"""""""""""""""""""""""""""""""""""""
 " Files, backups and undo              "
