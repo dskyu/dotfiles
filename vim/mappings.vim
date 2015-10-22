@@ -1,5 +1,6 @@
 "Remap VIM 0 to the first non-blank character
 map 0 ^
+map - $
 
 "CtrlP mappings
 map zps :CtrlP<Enter>
@@ -16,8 +17,8 @@ map <F4> :NERDTreeToggle<Enter>
 map <F5> :Tagbar<Enter>
 
 "Tabbar mappings"
-map <C-n> :Tbbn<Enter>
-map <C-b> :Tbbp<Enter>
+map <C-m> :Tbbn<Enter>
+map <C-n> :Tbbp<Enter>
 map <C-d> :Tbbd<Enter>
 map zts :TbStart<Enter>
 map ztc :TbStop<Enter>

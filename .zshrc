@@ -99,6 +99,18 @@ alias -s bz2='tar -xjvf'
 alias vi='open -a MacVim'
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 
-
-
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH=$PATH:/usr/local/mysql/bin
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+export PIP_REQUIRE_VIRTUALENV=true
+
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages' 
+export PIP_VIRTUALENV_BASE=$WORKON_HOME   
+export PIP_RESPECT_VIRTUALENV=true
+
+if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then        
+    source /usr/local/bin/virtualenvwrapper.sh    
+else        
+    echo "WARNING: Can't find virtualenvwrapper.sh"    
+fi
