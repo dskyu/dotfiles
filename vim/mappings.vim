@@ -35,3 +35,4 @@ nmap mo i<Enter><Esc>
 
 "Python flake8 check
 autocmd FileType python map <buffer> zfp :call Flake8()<CR>
+
