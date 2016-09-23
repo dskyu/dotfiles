@@ -88,10 +88,6 @@ alias -s tgz='tar -xzvf'
 alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
 
-
-alias vi='open -a MacVim'
-alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
-
 export EDITOR='vim'
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

@@ -9,12 +9,6 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 
 #Run this script will install the dotfiles.
 
-#Check whether the ~/.dotfiles directory exists.
-if [ -d ~/.dotfiles ]; then
-    echo "~/.dotfiles directory exists. Exit."
-    exit 1
-fi
-
 if [ -f ~/.zshrc ]; then
     echo "Found existing .zshrc directory in your HOME directory."
     echo "Move it to ~/.zshrc_backup."
