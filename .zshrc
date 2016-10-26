@@ -49,7 +49,7 @@ ZSH_THEME="candy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew fabric gem rvm ruby rails bundler capistrano rake npm nvm node zsh-autosuggestions)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting git brew fabric gem rvm ruby rails bundler capistrano rake npm nvm node)
 
 # User configuration
 
@@ -105,6 +105,13 @@ fi
 
 if [ -f ~/.bash_profile ]; then
     source ~/.bash_profile
+fi
+
+if [ -d ~/.dotfiles/zsh/functions/ ]; then
+    for file in ~/.dotfiles/zsh/functions/*
+    do
+        source $file
+    done
 fi
 
 export NVM_DIR="/Users/duyu/.nvm"
