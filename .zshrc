@@ -76,6 +76,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen%an, %cr' --abbrev-commit --date=relative"
 alias cls='clear'
 alias javac="javac -J-Dfile.encoding=utf8"
 alias grep="grep --color=auto"
