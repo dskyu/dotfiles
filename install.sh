@@ -17,6 +17,11 @@ fi
 
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 
+if [ -d ~/.oh-my-zsh/plugins]; then
+    echo "Install zsh plugins"
+    mv ~/.dotfiles/zsh/plugins/* ~/.oh-my-zsh/plugins/
+fi
+
 #Install vim configurations.
 printf "\n"
 echo "#######################################"
@@ -45,3 +50,9 @@ fi
 ln -s ~/.dotfiles/vim/vimrc.vim ~/.vimrc
 ln -s ~/.dotfiles/vim/gvimrc.vim ~/.gvimrc
 ln -s ~/.dotfiles/vim/vim/ ~/.vim
+
+
+# Add some zsh plugins
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
+

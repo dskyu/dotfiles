@@ -49,7 +49,7 @@ ZSH_THEME="candy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew fabric gem rvm ruby rails bundler capistrano rake)
+plugins=(git brew fabric gem rvm ruby rails bundler capistrano rake npm nvm node zsh-autosuggestions)
 
 # User configuration
 
@@ -93,8 +93,7 @@ export EDITOR='vim'
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH=$PATH:/usr/local/mysql/bin
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
-export PIP_REQUIRE_VIRTUALENV=true
-
+#export PIP_REQUIRE_VIRTUALENV=true
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages' 
 export PIP_VIRTUALENV_BASE=$WORKON_HOME   
@@ -102,10 +101,11 @@ export PIP_RESPECT_VIRTUALENV=true
 
 if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then        
     source /usr/local/bin/virtualenvwrapper.sh    
-else        
-    echo "WARNING: Can't find virtualenvwrapper.sh"    
 fi
 
 if [ -f ~/.bash_profile ]; then
     source ~/.bash_profile
 fi
+
+export NVM_DIR="/Users/duyu/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
