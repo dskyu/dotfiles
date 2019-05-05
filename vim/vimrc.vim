@@ -28,3 +28,5 @@ source ~/.dotfiles/vim/startup.vim
 source ~/.dotfiles/vim/mappings.vim
 
 source ~/.dotfiles/vim/hobby.vim
+
+let Tlist_Ctags_Cmd="/usr/local/bin/ctags"
